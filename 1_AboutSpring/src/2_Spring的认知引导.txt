@@ -1,0 +1,16 @@
+/**
+ * Spring的认知引导
+ * @author FrancisGaozhu
+ * @date 2018/9/4 16:04
+ * @mail francisgaozhu@foxmail.com
+ * 你不妨从如下的方面开始认知Spring框架
+ */
+
+
+如果想认识Spring，那么一定要围绕着以下的几个问题。
+1.Spring框架是一个什么框架
+2.Spring框架能做什么
+3.Spring框架的主要用途
+4.其他的相关内容，例如Spring的发展和由来等，当然这个不重要。
+
+以上的各项问题会在后文中文档上以及示例代码上逐渐地得到解决。
