@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- FrancisGaozhu 2018/9/11 15:01：构造器实例化的配置 -->
+    <bean id="bean1" class="gaozhu.francis.model.Bean1"/>
+
+    <!-- FrancisGaozhu 2018/9/11 15:12：通过静态工厂方式实例化一个对象 -->
+    <bean id="bean2" class="gaozhu.francis.factory.BFactory" factory-method="getBean"/>
+
+    <!-- FrancisGaozhu 2018/9/11 15:19：通过实例化工厂创建一个Bean的方式 -->
+    <bean id="bean3Factory" class="gaozhu.francis.factory.Bean3Factory"/>
+    <bean id="bean3" factory-bean="bean3Factory" factory-method="createBean"/>
+
+</beans>
