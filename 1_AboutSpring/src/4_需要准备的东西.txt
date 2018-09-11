@@ -12,6 +12,15 @@
 下载地址是：http://repo.spring.io/simple/libs-release-local/org/springframework/spring
 里面会有各个版本的框架下载利链接，本着学习的时候使用最新的版本的原则（最新的版本一定兼容之前的功能，并且提供了新的特性，适合用来学习）
 直接选择最新的版本下载即可。当然也可以使用笨示例中推荐使用的版本，4.3.6RELEASE；
+
+主要的Jar包说明：
+spring-core-4.3.6.RELEASE.jar：Spring的核心Jar包，Spring框架中的其他任何模块都需要依赖于这个Jar包。简言之，如果想要使用Spring框
+架那么这个Jar包是必不可少的。
+spring-beans-4.3.6.RELEASE.jar：虽然不是Spring核心的Jar包，但是也是Spring框架中所必要的一部分，这个jar包括了Spring核心的依赖注入
+和控制反转。管理对象生命周期的内容。
+spring-context-4.3.6.RELEASE.jar：Spring提供了在基础控制反转功能上的扩展服务，还提供了对于企业级服务的支持。例如邮件服务、任务调度
+JNDK定位、EJB继承、远程访问，缓存和各种视图层框架的封装等。
+spring-expression-4.3.6.RELEASE.jar：定义了Spring表达式语言的Jar包。
 ========================================================================================================================
 
 
