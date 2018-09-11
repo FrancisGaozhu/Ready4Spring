@@ -25,6 +25,5 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="spring-beans-4.3.6.RELEASE" level="project" />
   </component>
 </module>
