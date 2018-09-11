@@ -24,6 +24,7 @@ public class ApplicationContextDemo
         try//不是必要加try，只是这句话一定会报错。
         {
             //如果配置文件放置于其他任何物理路径下，那么这样创建上下文对象。双引号中的内容是配置文件路径
+            //需要注意的是，给出的路径是绝对路径，默认按照绝对路径进行查找。
             ApplicationContext applicationContext1 = new FileSystemXmlApplicationContext("");
         }
         catch(Exception ex)
