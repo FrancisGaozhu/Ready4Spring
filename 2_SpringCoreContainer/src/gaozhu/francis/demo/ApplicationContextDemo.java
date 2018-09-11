@@ -21,10 +21,18 @@ public class ApplicationContextDemo
         但是如果希望Spring容器配置文件放在其他的人和物理路径也没有任何问题。
          */
 
-        //如果配置文件放置于其他任何物理路径下，那么这样创建上下文对象。双引号中的内容是配置文件路径
-        ApplicationContext applicationContext1 = new FileSystemXmlApplicationContext("");
+        try//不是必要加try，只是这句话一定会报错。
+        {
+            //如果配置文件放置于其他任何物理路径下，那么这样创建上下文对象。双引号中的内容是配置文件路径
+            ApplicationContext applicationContext1 = new FileSystemXmlApplicationContext("");
+        }
+        catch(Exception ex)
+        {
+
+        }
 
         //如果配置文件放置于当前项目的构架目录范围内，那么可以通过这种方式创建上下文对象。双引号中放置配置文件路径。
-        ApplicationContext applicationContext2 = new ClassPathXmlApplicationContext("");
+        //这个是唯一的一个重点，只需要记住这个就足够了。
+        ApplicationContext applicationContext2 = new ClassPathXmlApplicationContext("applicationContext.xml");
     }
 }
