@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+    FrancisGaozhu 2018/9/12 9:16：
+    配置了一个作用域为单实例的Bean，配置作用域的方式是在bean元素上增加scope属性，实际上如果要配置singleton作用域并不需要如此手动配置
+    Spring容器默认的作用域就是singleton
+     -->
+    <bean id="singletonScope" class="gaozhu.francis.model.SingletonScope" scope="singleton"/>
+
+    <!-- FrancisGaozhu 2018/9/12 9:28：
+    配置了一个原型作用域的Bean
+     -->
+    <bean id="prototypeScope" class="gaozhu.francis.model.PrototypeScope" scope="prototype"/>
+
+</beans>
